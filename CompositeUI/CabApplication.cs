@@ -235,7 +235,7 @@ namespace Cnt.CompositeUI
 			builder.Strategies.AddNew<ObjectBuiltNotificationStrategy>(BuilderStage.PostInitialization);
 
 			builder.Policies.SetDefault<ISingletonPolicy>(new SingletonPolicy(true));
-			builder.Policies.SetDefault<IBuilderTracePolicy>(new BuilderTraceSourcePolicy(new TraceSource("Microsoft.Practices.ObjectBuilder")));
+			builder.Policies.SetDefault<IBuilderTracePolicy>(new BuilderTraceSourcePolicy(new TraceSource("Cnt.ObjectBuilder")));
 			builder.Policies.SetDefault<ObjectBuiltNotificationPolicy>(new ObjectBuiltNotificationPolicy());
 
 			return builder;

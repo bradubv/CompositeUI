@@ -147,6 +147,12 @@
   <data name="CannotUnregisterSiteRegisteredWithParent" xml:space="preserve">
     <value>Cannot unregister site that was registered in parent: {0}</value>
   </data>
+  <data name="CommandInjectionBuildUp" xml:space="preserve">
+    <value>Adding command handler on {0} for command '{1}'</value>
+  </data>
+  <data name="CommandInjectionTearDown" xml:space="preserve">
+    <value>Removing command handler from {0} for command '{1}'</value>
+  </data>
   <data name="DependencyForUnknownModule" xml:space="preserve">
     <value>Cannot add dependency for unknown module '{0}'; call AddModule() before AddDependency()</value>
   </data>
@@ -238,6 +244,9 @@
   <data name="ModuleStartCalled" xml:space="preserve">
     <value>Load() method called for Module {0}.</value>
   </data>
+  <data name="NoRegisteredUIElementFactory" xml:space="preserve">
+    <value>No UIElementAdapterFactory register for type {0}.</value>
+  </data>
   <data name="NoRemoveWorkItemFromManagedObjectCollection" xml:space="preserve">
     <value>Removing WorkItems is not permitted. Use WorkItem.Terminate or WorkItem.Dispose to clean up a WorkItem.</value>
   </data>
@@ -267,6 +276,9 @@
   </data>
   <data name="SolutionProfileNotFound" xml:space="preserve">
     <value>Catalog file at location {0} could not be found.</value>
+  </data>
+  <data name="StaticCommandHandlerNotSupported" xml:space="preserve">
+    <value>Static command handler "{0}" is not supported.</value>
   </data>
   <data name="StaticPublisherNotAllowed" xml:space="preserve">
     <value>Registering static event {0} as topic publication is not allowed.</value>
@@ -316,8 +328,14 @@
   <data name="TypeNotCompatible" xml:space="preserve">
     <value>The provided type {0} is not compatible with {1}.</value>
   </data>
+  <data name="WorkItemExtensionInitialized" xml:space="preserve">
+    <value>Initialized WorkItem extension {0} with WorkItem {1}.</value>
+  </data>
   <data name="WorkItemExtensionRegistered" xml:space="preserve">
     <value>Registered WorkItem extension type {0} for WorkItem type {1}.</value>
+  </data>
+  <data name="WorkItemExtensionRootRegistered" xml:space="preserve">
+    <value>Registered WorkItem extension type {0} for root WorkItem.</value>
   </data>
   <data name="WorkItemExtensionTypeAlreadyRegistered" xml:space="preserve">
     <value>The WorkItem Extension type {0} is already registered for WorkItem type {1}.</value>

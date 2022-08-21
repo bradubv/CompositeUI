@@ -151,6 +151,24 @@ namespace Cnt.CompositeUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Adding command handler on {0} for command &apos;{1}&apos;.
+        /// </summary>
+        internal static string CommandInjectionBuildUp {
+            get {
+                return ResourceManager.GetString("CommandInjectionBuildUp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Removing command handler from {0} for command &apos;{1}&apos;.
+        /// </summary>
+        internal static string CommandInjectionTearDown {
+            get {
+                return ResourceManager.GetString("CommandInjectionTearDown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cannot add dependency for unknown module &apos;{0}&apos;; call AddModule() before AddDependency().
         /// </summary>
         internal static string DependencyForUnknownModule {
@@ -422,6 +440,15 @@ namespace Cnt.CompositeUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No UIElementAdapterFactory register for type {0}..
+        /// </summary>
+        internal static string NoRegisteredUIElementFactory {
+            get {
+                return ResourceManager.GetString("NoRegisteredUIElementFactory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Removing WorkItems is not permitted. Use WorkItem.Terminate or WorkItem.Dispose to clean up a WorkItem..
         /// </summary>
         internal static string NoRemoveWorkItemFromManagedObjectCollection {
@@ -508,6 +535,15 @@ namespace Cnt.CompositeUI.Properties {
         internal static string SolutionProfileNotFound {
             get {
                 return ResourceManager.GetString("SolutionProfileNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Static command handler &quot;{0}&quot; is not supported..
+        /// </summary>
+        internal static string StaticCommandHandlerNotSupported {
+            get {
+                return ResourceManager.GetString("StaticCommandHandlerNotSupported", resourceCulture);
             }
         }
         
@@ -656,11 +692,29 @@ namespace Cnt.CompositeUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Initialized WorkItem extension {0} with WorkItem {1}..
+        /// </summary>
+        internal static string WorkItemExtensionInitialized {
+            get {
+                return ResourceManager.GetString("WorkItemExtensionInitialized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Registered WorkItem extension type {0} for WorkItem type {1}..
         /// </summary>
         internal static string WorkItemExtensionRegistered {
             get {
                 return ResourceManager.GetString("WorkItemExtensionRegistered", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registered WorkItem extension type {0} for root WorkItem..
+        /// </summary>
+        internal static string WorkItemExtensionRootRegistered {
+            get {
+                return ResourceManager.GetString("WorkItemExtensionRootRegistered", resourceCulture);
             }
         }
         
