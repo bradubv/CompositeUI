@@ -274,6 +274,9 @@
   <data name="ServiceMissingExceptionSimpleMessage" xml:space="preserve">
     <value>Service {0} is not available in the current context.</value>
   </data>
+  <data name="SmartPartMustImplementISmartPartInfoProvider" xml:space="preserve">
+    <value>Implement ISmartPartInfoProvider in the containing smart part. Required in order for contained smart part infos to work.</value>
+  </data>
   <data name="SolutionProfileNotFound" xml:space="preserve">
     <value>Catalog file at location {0} could not be found.</value>
   </data>
@@ -327,6 +330,9 @@
   </data>
   <data name="TypeNotCompatible" xml:space="preserve">
     <value>The provided type {0} is not compatible with {1}.</value>
+  </data>
+  <data name="VisualizerAlreadyInitialized" xml:space="preserve">
+    <value>The visualizer has already been initialized.</value>
   </data>
   <data name="WorkItemExtensionInitialized" xml:space="preserve">
     <value>Initialized WorkItem extension {0} with WorkItem {1}.</value>

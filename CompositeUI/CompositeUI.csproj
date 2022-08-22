@@ -1,16 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
     <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
+    <VersionPrefix>1.0.5</VersionPrefix>
     <AssemblyName>Cnt.$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>Cnt.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Company>cntsoftware.com</Company>
     <Authors>bradubv</Authors>
     <Description>Microsoft Patterns &amp; Practices Composite Application Block updated for .NET 6 </Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

@@ -26,85 +26,43 @@
 //===============================================================================
 // Copyright © cntsoftware.com
 
-using Cnt.CompositeUI.Utility;
 using System.ComponentModel;
 
 namespace Cnt.CompositeUI.SmartParts
 {
     /// <summary>
-    /// Provides information about a specific smartpart.
+    /// Default implementation of a <see cref="ISmartPartInfoProvider"/> that 
+    /// can be used to aggregate the behavior on smart parts that use 
+    /// a designer to drag and drop the <see cref="ISmartPartInfo"/> components.
     /// </summary>
-    public partial class SmartPartInfo : ISmartPartInfo
+    [DesignTimeVisible(false)]
+    public class SmartPartInfoProvider : Component, ISmartPartInfoProvider
     {
-        #region Fields
-
-        private string description = string.Empty;
-        private string title = string.Empty;
-
-        #endregion
-
-        #region Constructors
+        private List<ISmartPartInfo> items = new List<ISmartPartInfo>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SmartPartInfo"/> class.
+        /// The list of <see cref="ISmartPartInfo"/> items the provider exposes.
         /// </summary>
-        public SmartPartInfo()
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        [Browsable(false)]
+        public ICollection<ISmartPartInfo> Items
         {
+            get { return items; }
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SmartPartInfo"/> class 
-        /// with the title and description values.
-        /// </summary>
-        public SmartPartInfo(string title, string description)
-        {
-            this.title = title;
-            this.description = description;
-        }
-
-        #endregion
-
-        #region Properties
+        #region ISmartPartInfoProvider Members
 
         /// <summary>
-        /// Description to associate with the related smart part.
+        /// Retrieves a smart part information object of the given type from the 
+        /// registered <see cref="Items"/>.
         /// </summary>
-        [Category("Layout")]
-        public string Description
+        /// <seealso cref="ISmartPartInfoProvider.GetSmartPartInfo"/>
+        public ISmartPartInfo GetSmartPartInfo(Type smartPartInfoType)
         {
-            get { return description; }
-            set { description = value; }
-        }
-
-        /// <summary>
-        /// Title to associate with the related smart part.
-        /// </summary>
-        [Category("Layout")]
-        public string Title
-        {
-            get { return title; }
-            set { title = value; }
-        }
-
-        #endregion
-
-        #region Public Methods
-
-        /// <summary>
-        /// Creates a new instance of the TSmartPartInfo 
-        /// and copies over the information in the source smart part.
-        /// </summary>
-        public static TSmartPartInfo ConvertTo<TSmartPartInfo>(ISmartPartInfo source)
-            where TSmartPartInfo : ISmartPartInfo, new()
-        {
-            Guard.ArgumentNotNull(source, "source");
-
-            TSmartPartInfo info = new TSmartPartInfo();
-
-            info.Description = source.Description;
-            info.Title = source.Title;
-
-            return info;
+            return items.Find(delegate (ISmartPartInfo info)
+            {
+                return info != null && info.GetType() == smartPartInfoType;
+            });
         }
 
         #endregion

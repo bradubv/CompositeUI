@@ -530,6 +530,15 @@ namespace Cnt.CompositeUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Implement ISmartPartInfoProvider in the containing smart part. Required in order for contained smart part infos to work..
+        /// </summary>
+        internal static string SmartPartMustImplementISmartPartInfoProvider {
+            get {
+                return ResourceManager.GetString("SmartPartMustImplementISmartPartInfoProvider", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Catalog file at location {0} could not be found..
         /// </summary>
         internal static string SolutionProfileNotFound {
@@ -688,6 +697,15 @@ namespace Cnt.CompositeUI.Properties {
         internal static string TypeNotCompatible {
             get {
                 return ResourceManager.GetString("TypeNotCompatible", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The visualizer has already been initialized..
+        /// </summary>
+        internal static string VisualizerAlreadyInitialized {
+            get {
+                return ResourceManager.GetString("VisualizerAlreadyInitialized", resourceCulture);
             }
         }
         

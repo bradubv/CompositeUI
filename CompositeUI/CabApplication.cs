@@ -34,7 +34,6 @@ using System.Security.Permissions;
 using Cnt.CompositeUI.BuilderStrategies;
 using Cnt.CompositeUI.Commands;
 using Cnt.CompositeUI.Configuration;
-//using Cnt.CompositeUI.EventBroker;
 using Cnt.CompositeUI.Services;
 using Cnt.CompositeUI.UIElements;
 using Cnt.ObjectBuilder;
