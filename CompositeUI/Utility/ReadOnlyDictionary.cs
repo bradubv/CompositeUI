@@ -30,6 +30,8 @@ using System.Collections;
 
 namespace Cnt.CompositeUI.Utility
 {
+	//TODO: A similar object exists in the System.Collections.Object model
+	//TODO: Could references to this be replaced by references to that?
 	/// <summary>
 	/// Provides a read-only implementation of <see cref="IDictionary{TKey,TValue}"/>.
 	/// </summary>

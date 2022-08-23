@@ -250,6 +250,24 @@ namespace Cnt.CompositeUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invoker is not of type {0}.
+        /// </summary>
+        internal static string EventCommandAdapterInvokerNotType {
+            get {
+                return ResourceManager.GetString("EventCommandAdapterInvokerNotType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The event {0} on the invoker {1} is not present..
+        /// </summary>
+        internal static string EventNotPresentOnInvoker {
+            get {
+                return ResourceManager.GetString("EventNotPresentOnInvoker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to One or more exceptions occurred while firing the topic &apos;{0}&apos;.
         /// </summary>
         internal static string EventTopicFireException {
@@ -539,6 +557,15 @@ namespace Cnt.CompositeUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The smartpart is not present in the workspace..
+        /// </summary>
+        internal static string SmartPartNotInWorkspace {
+            get {
+                return ResourceManager.GetString("SmartPartNotInWorkspace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Catalog file at location {0} could not be found..
         /// </summary>
         internal static string SolutionProfileNotFound {
@@ -553,6 +580,15 @@ namespace Cnt.CompositeUI.Properties {
         internal static string StaticCommandHandlerNotSupported {
             get {
                 return ResourceManager.GetString("StaticCommandHandlerNotSupported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Static command publisher &quot;{0}&quot; is not supported..
+        /// </summary>
+        internal static string StaticCommandPublisherNotSupported {
+            get {
+                return ResourceManager.GetString("StaticCommandPublisherNotSupported", resourceCulture);
             }
         }
         
@@ -697,6 +733,24 @@ namespace Cnt.CompositeUI.Properties {
         internal static string TypeNotCompatible {
             get {
                 return ResourceManager.GetString("TypeNotCompatible", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UI element must be a {0}.
+        /// </summary>
+        internal static string UIElementNotCorrectType {
+            get {
+                return ResourceManager.GetString("UIElementNotCorrectType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Smart part type {0} is not supported. Expected {1} or a compatible type..
+        /// </summary>
+        internal static string UnsupportedSmartPartType {
+            get {
+                return ResourceManager.GetString("UnsupportedSmartPartType", resourceCulture);
             }
         }
         

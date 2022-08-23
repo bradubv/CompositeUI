@@ -180,6 +180,12 @@
   <data name="ErrorReadingProfile" xml:space="preserve">
     <value>An error occurred while reading the solution profile {0}.</value>
   </data>
+  <data name="EventCommandAdapterInvokerNotType" xml:space="preserve">
+    <value>Invoker is not of type {0}</value>
+  </data>
+  <data name="EventNotPresentOnInvoker" xml:space="preserve">
+    <value>The event {0} on the invoker {1} is not present.</value>
+  </data>
   <data name="EventTopicFireException" xml:space="preserve">
     <value>One or more exceptions occurred while firing the topic '{0}'</value>
   </data>
@@ -277,11 +283,17 @@
   <data name="SmartPartMustImplementISmartPartInfoProvider" xml:space="preserve">
     <value>Implement ISmartPartInfoProvider in the containing smart part. Required in order for contained smart part infos to work.</value>
   </data>
+  <data name="SmartPartNotInWorkspace" xml:space="preserve">
+    <value>The smartpart is not present in the workspace.</value>
+  </data>
   <data name="SolutionProfileNotFound" xml:space="preserve">
     <value>Catalog file at location {0} could not be found.</value>
   </data>
   <data name="StaticCommandHandlerNotSupported" xml:space="preserve">
     <value>Static command handler "{0}" is not supported.</value>
+  </data>
+  <data name="StaticCommandPublisherNotSupported" xml:space="preserve">
+    <value>Static command publisher "{0}" is not supported.</value>
   </data>
   <data name="StaticPublisherNotAllowed" xml:space="preserve">
     <value>Registering static event {0} as topic publication is not allowed.</value>
@@ -330,6 +342,12 @@
   </data>
   <data name="TypeNotCompatible" xml:space="preserve">
     <value>The provided type {0} is not compatible with {1}.</value>
+  </data>
+  <data name="UIElementNotCorrectType" xml:space="preserve">
+    <value>UI element must be a {0}</value>
+  </data>
+  <data name="UnsupportedSmartPartType" xml:space="preserve">
+    <value>Smart part type {0} is not supported. Expected {1} or a compatible type.</value>
   </data>
   <data name="VisualizerAlreadyInitialized" xml:space="preserve">
     <value>The visualizer has already been initialized.</value>
