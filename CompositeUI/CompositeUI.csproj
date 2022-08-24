@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
-    <VersionPrefix>1.0.9</VersionPrefix>
+    <VersionPrefix>1.0.12</VersionPrefix>
     <AssemblyName>Cnt.$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>Cnt.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -15,6 +15,14 @@
     <Description>Microsoft Patterns &amp; Practices Composite Application Block updated for .NET 6 </Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SolutionProfile.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="SolutionProfile.xsd" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Cnt.ObjectBuilder" Version="1.0.2" />
